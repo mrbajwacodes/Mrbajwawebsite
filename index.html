@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MrBajwa | Developer</title>
 
-<img src="images/kitty.png">
+<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1493985480964833362/1552067911227678760/Screenshot_2026-09-21_200425.png?ex=6ab44362&is=6ab2f1e2&hm=a16338f2af760dcfb051219630c39ac2ea15005d7b05333c8ef1853f30a45573&">
 <style>
 * { box-sizing: border-box; }
 body { margin: 0; background: #f4f6f7; color: #111; font-family: "Courier New", monospace; transition: 0.3s; }
 body.dark { background: #080c0a; color: white; }
-/* NAVBAR */
+
 nav { width: 100%; border-bottom: 2px solid #20c46b; background: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; }
 body.dark nav { background: #101512; }
 .nav-title { font-weight: bold; color: #20c46b; }
@@ -18,7 +18,7 @@ body.dark nav { background: #101512; }
 .nav-links a, .theme-button { text-decoration: none; background: white; color: black; border: 1px solid #20c46b; padding: 8px 12px; font-family: "Courier New", monospace; font-weight: bold; cursor: pointer; }
 body.dark .nav-links a, body.dark .theme-button { background: black; color: white; }
 .nav-links a:hover, .theme-button:hover { background: #20c46b; color: black; }
-/* MAIN */
+
 .container { max-width: 750px; margin: 50px auto; padding: 30px; }
 .card { background: white; padding: 30px; border: 2px solid #111; box-shadow: 8px 8px 0 #111; }
 body.dark .card { background: #101512; border-color: white; box-shadow: 8px 8px 0 #20c46b; }
@@ -27,17 +27,29 @@ body.dark .card { background: #101512; border-color: white; box-shadow: 8px 8px 
 .status { color: #20c46b; font-weight: bold; }
 .status-note { font-size: 11px; color: #777; margin-top: 2px; }
 body.dark .status-note { color: #aaa; }
+
+
+.profile-header { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.profile-pic { 
+  width: 85px;          
+  height: 85px;         
+  border-radius: 50%;   
+  object-fit: cover;    
+  border: 2px solid #20c46b; 
+}
+
 h1 { font-size: 45px; margin: 0; }
 .subtitle { color: #20c46b; margin-top: 5px; }
+
 .section { margin-top: 35px; }
 .section-title { color: #20c46b; font-weight: bold; margin-bottom: 12px; }
 .about { border-left: 4px solid #20c46b; padding-left: 15px; line-height: 1.6; }
-/* CONTACT LINKS */
+
 .links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .link { text-decoration: none; text-align: center; background: white; color: black; border: 2px solid #20c46b; padding: 15px; font-weight: bold; transition: 0.2s; }
 body.dark .link { background: black; color: white; }
 .link:hover { background: #20c46b; color: black; }
-/* PAYMENT */
+
 .payment { margin-top: 35px; border-top: 1px solid #aaa; padding-top: 25px; }
 .venmo-container { text-align: center; border: 2px solid #20c46b; background: white; padding: 20px; }
 body.dark .venmo-container { background: black; }
@@ -63,25 +75,23 @@ footer { text-align: center; margin-top: 25px; font-size: 12px; color: #777; }
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
   <div class="nav-title">MRBAJWA.DEV</div>
   <div class="nav-links">
-    <!-- REQUEST PROJECT -->
+
     <a href="https://docs.google.com/forms/d/1iNUN5REIn2sHF_trnktEOj6F5-_JawAqvlJY3PiPhSs/" target="_blank" rel="noopener noreferrer">
       REQUEST PROJECT
     </a>
-    <!-- SUPPORT -->
+
     <a href="https://docs.google.com/forms/d/1GzJebjRBp7MX5oceVdOKa2B1k6OiU9-6U6MWarjOkDE" target="_blank" rel="noopener noreferrer">
       SUPPORT
     </a>
-    <!-- DARK MODE -->
+
     <button class="theme-button" onclick="toggleTheme()">
       DARK
     </button>
   </div>
 </nav>
-
 <div class="container">
   <div class="card">
     <div class="top-bar">
@@ -91,21 +101,26 @@ footer { text-align: center; margin-top: 25px; font-size: 12px; color: #777; }
         <div class="status-note">Not available past 9:00 PM</div>
       </div>
     </div>
-
-    <h1>Mrbajwa</h1>
-    <div class="subtitle">
-      // TEENAGE DEVELOPER · FREELANCER
-    </div>
-
-    <!-- ABOUT -->
-    <div class="section">
-      <div class="section-title">ABOUT_ME.TXT</div>
-      <div class="about">
-        I’m a teenager, and I code because I need money. Coding gives me a way to earn money while also building a skill that could help me in the future. I spend my free time learning, working on projects, and taking on coding jobs so I can become more financially independent.
+    
+    
+    <div class="profile-header">
+      <img src="https://cdn.discordapp.com/attachments/1493985480964833362/1552067911227678760/Screenshot_2026-09-21_200425.png?ex=6ab44362&is=6ab2f1e2&hm=a16338f2af760dcfb051219630c39ac2ea15005d7b05333c8ef1853f30a45573&" alt="MrBajwa Profile Picture" class="profile-pic">
+      <div>
+        <h1>MrBajwa</h1>
+        <div class="subtitle">
+          // TEENAGE DEVELOPER · FREELANCER
+        </div>
       </div>
     </div>
 
-    <!-- CONTACT / SOCIALS -->
+
+    <div class="section">
+      <div class="section-title">ABOUT_ME.TXT</div>
+      <div class="about">
+        I’m a teenager named MrBajwa, and I code because I need money. Coding gives me a way to earn money while also building a skill that could help me in the future. I spend my free time learning, working on projects, and taking on coding jobs so I can become more financially independent.
+      </div>
+    </div>
+
     <div class="section">
       <div class="section-title">// CONTACT</div>
       <div class="links">
@@ -124,7 +139,6 @@ footer { text-align: center; margin-top: 25px; font-size: 12px; color: #777; }
       </div>
     </div>
 
-    <!-- PAYMENT -->
     <div class="payment">
       <div class="section-title">// PAYMENT</div>
       <div class="venmo-container">
@@ -138,7 +152,6 @@ footer { text-align: center; margin-top: 25px; font-size: 12px; color: #777; }
       </div>
     </div>
 
-    <!-- CONTACT INFO -->
     <div class="contact">
       <div class="section-title">// CONTACT_INFO</div>
       <div class="contact-info">
@@ -156,13 +169,11 @@ footer { text-align: center; margin-top: 25px; font-size: 12px; color: #777; }
         </a>
       </div>
     </div>
-
     <footer>
-       2026 Mrbajwa · BUILD: 05 ┃┃ Avyan Kumar
+      © 2026 MrBajwa · BUILD: 01
     </footer>
   </div>
 </div>
-
 <script>
 function toggleTheme() {
   document.body.classList.toggle("dark");
@@ -174,6 +185,5 @@ function toggleTheme() {
   }
 }
 </script>
-
 </body>
 </html>
